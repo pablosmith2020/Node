@@ -14,7 +14,7 @@ const observable = fromEvent(inp1, "keyup").pipe(
       return throwError("Ingreso Complete por Teclado");
     } else {
       visualizar.innerHTML = e.target.value.split("").reverse().join("");
-      return "Ok";
+      return '';
     }
 
     //  SetTimeOut manipulo el tiempo de respuesta
@@ -24,11 +24,10 @@ const observable = fromEvent(inp1, "keyup").pipe(
       cadena.disabled = true;
       cadena.innerHTML = "";
       visualizar.innerHTML = "";
+      observable.complete();
     }, 2000); //30000
 
-    return function unsubscribe() {
-      clearInterval(interval);
-    };
+    return clearInterval.unsubscribe()
   })
 );
 
