@@ -1,0 +1,26 @@
+ [
+          {
+            "item":  "Fideos",
+            "cantidad":25
+          },
+          {
+            "item":  "Harina",
+            "cantidad":234
+          },
+          {
+            "item":  "Arroz",
+            "cantidad":2545
+          },
+          {
+            "item":  "Polenta",
+            "cantidad":876
+          },
+          {
+            "item":  "Sopa",
+            "cantidad":255
+          },
+          {
+            "item":  "Papas",
+            "cantidad":67
+          }        
+]
